@@ -1,0 +1,15 @@
+applications:
+- name: securityApplicationNewOne
+  memory: 1G
+  path: target/securityTesting.war
+  random-route: true
+  buildpacks: 
+  - https://github.com/cloudfoundry/java-buildpack.git
+  services: 
+  - xsuaa-auth-security
+
+
+
+
+
+
